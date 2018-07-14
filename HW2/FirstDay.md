@@ -1,3 +1,5 @@
+## λ calculus
+
 ### Exercize 1
 Find value 
 ```
@@ -43,3 +45,36 @@ o t f = t | a t f = f
 o t t = t | a t t = t
 ```
 Find ?r and ?n 
+
+## Haskell
+
+### Implement:
+
+```haskell
+double :: String -> String
+-- double :: Vec n Char -> Vec (2*n) Char
+-- double "xx" = "xxxx"
+
+mow :: String
+-- mow = "mow"
+```
+
+---
+
+A DNA nucleobase type, an enumeration of Adenine, Cytosine, Guanine and Thymine, and a function to get a complementary nucleobase.
+
+```haskell
+data DNAN = ...
+
+complementary :: DNAN -> DNAN
+```
+
+---
+
+Walk through:
+
+- `Course.ExactlyOne`
+- `Course.Validation`
+- `Course.Optional`
+
+from data61/fp-course.
