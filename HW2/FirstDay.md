@@ -1,6 +1,9 @@
 ### Exercize 1
 Find value 
 ```
+(λx.🥕)🍋 = ?
+(λx.x)🥕 = ?
+(λ🥕🍋.🥕)🍋 = ? 
 (λx.λy.x)(λx.x) = ?
 ```
 
