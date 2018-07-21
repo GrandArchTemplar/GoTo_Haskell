@@ -31,3 +31,27 @@ https://github.com/GrandArchTemplar/GoTo_Haskell/blob/master/HW/FourthDay.md
 Общая концепция: нужно открывать модули в [этом порядке](https://github.com/data61/fp-course#progression), читать, и реализовывать там функции.
 
 В любой непонятной ситуации - `:type`.
+
+## Как тестировать data61/fp-course
+
+вводим последовательно
+```
+     cabal update
+     cabal install cabal-install
+     cabal install --only-dependencies --enable-tests
+     cabal configure --enable-tests
+     cabal build
+     cabal test
+```
+молимся чтобы работало
+это запустит полные тесты
+частичные тесты сложнее:
+сначала сделайте так чтобы полные тесты запускались(необязательно для этого чтобы они проходились)
+затем делайте следующее:
+```
+тестировать модуль:
+cabal test tasty --show-detail=direct --test-option=--pattern="Tests.List."
+
+тестировать упражнение:
+cabal test tasty --show-detail=direct --test-option=--pattern="List.headOr"
+```
