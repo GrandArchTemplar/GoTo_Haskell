@@ -64,7 +64,7 @@ mappend' :: Endo a -> Endo a -> Endo a
 
 ### Stack воспрянет из могилы
 1. поставить стек
-2. создать проект с темплейтов отсюда: https://raw.githubusercontent.com/GrandArchTemplar/stack-templates/master/academic.hsfiles(сделать так чтобы он появился на вашем гитлабе/гитхабе/любой другой системе связанной с git)
+2. создать проект с темплейтов отсюда: https://raw.githubusercontent.com/GrandArchTemplar/stack-templates/master/academic.hsfiles (сделать так чтобы он появился на вашем гитлабе/гитхабе/любой другой системе связанной с git)
 3. реализовать в main вызов функции fib
 ```
 fib :: Integer -> [Integer]
