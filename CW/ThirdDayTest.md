@@ -10,7 +10,7 @@ x_{2} = 3
 
 ### Сворачиваем странные функции
 
-data IntTree = Tree Int Int IntTree | Leaf
+data IntTree = Tree Int IntTree IntTree | Leaf
 
 написать функцию свёртки для него
 
