@@ -10,7 +10,7 @@ let F = λa.λb.b
 let pair = λa.λb.λt.tab
 let fst = λp.p T
 let snd = λp.p F
-let magic = λn.λs.λz.snd(n (λp.pair (s(fst p) (fst p) ) (pair z z))
+let magic = λn.λs.λz.snd(n (λp.pair (s(fst p)) (fst p) ) (pair z z))
 let a = λs.λz.s(sz)
 let b = λs.λz.s(s(s(sz)))
 find: 
