@@ -14,7 +14,7 @@ let magic = λn.λs.λz.snd(n (λp.pair (s(fst p) (fst p) ) (pair z z))
 let a = λs.λz.s(sz)
 let b = λs.λz.s(s(s(sz)))
 find: 
-(λa.λb.a pred b) b a
+(λa.λb.a magic b) b a
 ```
 
 ## Блок КМБ-0 хаскеля
